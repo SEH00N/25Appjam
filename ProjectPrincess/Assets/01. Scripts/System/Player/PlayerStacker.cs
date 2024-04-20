@@ -53,8 +53,9 @@ namespace Players
 
         private Vector3 GetQueuePosition(int count)
         {
+            Debug.Log(count);
             Vector3 position = queuePosition.position;
-            position.y = queuePositionY;
+            // position.y = queuePositionY;
             position.x -= count * offset;
 
             return position;

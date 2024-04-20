@@ -6654,6 +6654,11 @@ PrefabInstance:
       propertyPath: playerPosition
       value: 
       objectReference: {fileID: 86999263}
+    - target: {fileID: 521992140216084591, guid: 276fb0b26c0921c42a3dd35c46cdfac8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 1265647619559443595, guid: 276fb0b26c0921c42a3dd35c46cdfac8,
         type: 3}
       propertyPath: onPlayerDeadEvent.m_PersistentCalls.m_Calls.Array.size
