@@ -15,10 +15,12 @@ public class ChangeSky : MonoBehaviour
     [SerializeField] private GameObject cloudObject;
 
     private Renderer renderer;
+    private MovingSky movingSky;
 
     private void Start()
     {
         renderer = GetComponent<Renderer>();
+        movingSky = GetComponent<MovingSky>();
     }
 
     private void Update()
@@ -45,6 +47,7 @@ public class ChangeSky : MonoBehaviour
         renderer.material.DOColor(Color.white, fadeSpeed);
         yield return new WaitForSeconds(fadeSpeed - 1f);
         cloudObject.SetActive(true);
+        movingSky.GetRenderer();
 
         matNum++;
         if (matNum == skyMat.Length)
