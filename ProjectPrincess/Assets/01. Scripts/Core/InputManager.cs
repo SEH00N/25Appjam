@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine.InputSystem;
 
-namespace Input
+namespace Inputs
 {
     public static class InputManager
     {
