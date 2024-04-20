@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using static Controls;
 
-namespace Input
+namespace Inputs
 {
     [CreateAssetMenu(menuName = "SO/Input/Ingame")]
     public class IngameInputSO : InputSO, IIngameActions
