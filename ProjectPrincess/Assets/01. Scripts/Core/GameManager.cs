@@ -6,6 +6,9 @@ namespace Core
     {
         public static GameManager Instance { get; private set; }
 
+        private GameCycle cycle = null;
+        public GameCycle Cycle => cycle;
+
         private void Awake()
         {
             if(Instance != null)
@@ -15,6 +18,8 @@ namespace Core
             }
 
             Instance = this;
+            
+            cycle = GetComponent<GameCycle>();
         }
     }
 }
