@@ -17,9 +17,11 @@ namespace Stacks
             movement = GetComponent<BasicMovement>();
         }
 
-        public void SetChild(StackObject child)
+        public void SetChild(StackObject child, float yOffset)
         {
-            child.SetPosition(childContainer.position);
+            Vector3 position = childContainer.position;
+            position.y = yOffset;
+            child.SetPosition(position);
             this.child = child;
         }
 
@@ -29,10 +31,13 @@ namespace Stacks
             movement.SetActive(true);
         }
 
-        public void PushPosition(Transform target)
+        public void PushPosition(Transform target, float yOffset)
         {
-            transform.position = target.position;
-            child?.PushPosition(childContainer);
+            Vector3 position = target.position;
+            position.y = yOffset;
+            transform.position = position;
+
+            child?.PushPosition(childContainer, yOffset);
         }
     }
 }

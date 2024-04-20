@@ -8,17 +8,27 @@ namespace Stacks
         private StackObject currentObject = null;
         private StackObject lastObject = null;
 
+        private float yOffset = 0f;
+
+        private void Awake()
+        {
+            yOffset = defaultPosition.position.y;
+        }
+
         public void Enqueue(StackObject stack)
         {
-            if(lastObject == null)
+            if(currentObject == null)
             {
                 currentObject = stack;
                 lastObject = currentObject;
-                lastObject.SetPosition(defaultPosition.position);
+
+                Vector3 position = defaultPosition.position;
+                position.y = yOffset;
+                lastObject.SetPosition(position);
             }
             else
             {
-                lastObject.SetChild(stack);
+                lastObject.SetChild(stack, yOffset);
                 lastObject = stack;
             }
         }
@@ -30,7 +40,7 @@ namespace Stacks
             
             StackObject value = currentObject;
             currentObject = currentObject.Child;
-            currentObject?.PushPosition(defaultPosition);
+            currentObject?.PushPosition(defaultPosition, yOffset);
 
             return value;
         }
