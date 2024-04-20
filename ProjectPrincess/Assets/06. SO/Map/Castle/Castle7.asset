@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MapPrefab: {fileID: 2912143161683158219, guid: cfc1089ca77ba8d4d833f0faa9a63313,
     type: 3}
-  MapSize: 13
+  MapSize: 15
