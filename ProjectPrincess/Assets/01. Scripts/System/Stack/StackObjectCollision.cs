@@ -34,10 +34,9 @@ namespace Stacks
         public void HandleStackObjectChanged(StackObjectState state)
         {
             if(state == StackObjectState.Queue)
-            {
-                col.isTrigger = false;
                 rb.useGravity = true;
-            }
+            else if(state == StackObjectState.Stack)
+                col.isTrigger = false;
         }
     }
 }
