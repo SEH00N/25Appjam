@@ -25,7 +25,7 @@ namespace Tweens
         protected override void HandleTweenCompleted()
         {
             base.HandleTweenCompleted();
-            body.localPosition = new Vector3(body.localPosition.x, endValue, body.localPosition.z);
+            body.localPosition = new Vector3(endValue, body.localPosition.y, body.localPosition.z);
         }
     }
 }

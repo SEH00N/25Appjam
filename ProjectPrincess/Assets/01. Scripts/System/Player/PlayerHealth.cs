@@ -12,7 +12,6 @@ namespace Players
         public void OnDamage(float damage, GameObject performer)
         {
             GameManager.Instance.Cycle.FinishGame();
-            Destroy(gameObject);
             onPlayerDeadEvent?.Invoke();
         }
     }

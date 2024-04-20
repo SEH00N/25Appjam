@@ -23,4 +23,4 @@ MonoBehaviour:
     Duration: 0.2
     Value: -585
     Ease: 8
-  endValue: 0
+  endValue: -585

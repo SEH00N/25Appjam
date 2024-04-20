@@ -6,7 +6,7 @@ namespace Maps
 {
     public class MapLoader : MonoBehaviour
     {
-        [SerializeField] ThemeSO currentTheme = null;
+        [SerializeField] ThemeSO dafuletTheme = null;
         [SerializeField] List<ThemeSO> themes = null;
 
         [Space(15f)]
@@ -14,7 +14,21 @@ namespace Maps
         [SerializeField] int themeRerollThreshold = 10;
         [SerializeField] float speedFactor = 1f;
 
+        private Vector3 nextSpawnPosition = Vector3.zero;
+        private ThemeSO currentTheme = null;
+        private List<Map> mapInstnaces = null;
+
         private int rerollCounter = 0;
+
+        private void Awake()
+        {
+            mapInstnaces = new List<Map>();
+        }
+
+        private void Start()
+        {
+            ResetMap();
+        }
 
         public void StartCycle()
         {
@@ -42,8 +56,9 @@ namespace Maps
         private MapSO SpawnMap()
         {
             MapSO mapData = currentTheme.Maps.PickRandom();
-            Instantiate(mapData.MapPrefab, mapSpawnPosition.position, Quaternion.identity);
-            mapSpawnPosition.position += Vector3.right * mapData.MapSize;
+            Map instance = Instantiate(mapData.MapPrefab, nextSpawnPosition, Quaternion.identity);
+            nextSpawnPosition += Vector3.right * mapData.MapSize;
+            mapInstnaces.Add(instance);
 
             return mapData;
         }
@@ -51,6 +66,18 @@ namespace Maps
         private void RerollTheme()
         {
             currentTheme = themes.PickRandom();
+        }
+
+        public void ResetMap()
+        {
+            mapInstnaces.ForEach(i => {
+                Destroy(i.gameObject);
+            });
+            mapInstnaces.Clear();
+
+            rerollCounter = 0;
+            currentTheme = dafuletTheme;
+            nextSpawnPosition = mapSpawnPosition.position;
         }
     }
 }
