@@ -28,7 +28,7 @@ namespace Players
                 return;
 
             transform.position += Vector3.up * offset;
-            instance.Init(stackPosition.position);
+            instance.SetPosition(stackPosition.position);
         }
     }
 }

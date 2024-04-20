@@ -14,7 +14,7 @@ namespace Stacks
             {
                 currentObject = stack;
                 lastObject = currentObject;
-                lastObject.Init(defaultPosition.position);
+                lastObject.SetPosition(defaultPosition.position);
             }
             else
             {
@@ -30,6 +30,7 @@ namespace Stacks
             
             StackObject value = currentObject;
             currentObject = currentObject.Child;
+            currentObject?.PushPosition(defaultPosition);
 
             return value;
         }
