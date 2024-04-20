@@ -1,3 +1,4 @@
+using Stacks;
 using UnityEngine;
 using Utility;
 
@@ -8,9 +9,12 @@ namespace Players
         [SerializeField] Transform playerPosition = null;
         private BasicMovement movement = null;
 
+        private PlayerStacker stacker = null;
+
         private void Awake()
         {
             movement = GetComponent<BasicMovement>();
+            stacker = GetComponent<PlayerStacker>();
         }
 
         public void ResetPlayer()
@@ -19,6 +23,11 @@ namespace Players
 
             transform.position = playerPosition.position;
             gameObject.SetActive(true);
-        }   
+        }
+
+        public void AddStackObject(StackObject stackObject)
+        {
+            stacker.AddStackObject(stackObject);
+        }
     }
 }

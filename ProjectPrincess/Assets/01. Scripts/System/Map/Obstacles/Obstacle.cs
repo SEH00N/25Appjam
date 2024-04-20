@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Maps.Obstacles
 {
-    public class Obstacle : MonoBehaviour, ICollidable
+    public class Obstacle : MonoBehaviour
     {
         public void OnCollide(GameObject other)
         {
