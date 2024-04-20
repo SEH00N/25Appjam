@@ -1,17 +1,25 @@
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+namespace Core
 {
-    public static GameManager Instance { get; private set; }
-
-    private void Awake()
+    public class GameManager : MonoBehaviour
     {
-        if(Instance != null)
-        {
-            Destroy(gameObject);
-            return;
-        }
+        public static GameManager Instance { get; private set; }
 
-        Instance = this;
+        private GameCycle cycle = null;
+        public GameCycle Cycle => cycle;
+
+        private void Awake()
+        {
+            if(Instance != null)
+            {
+                Destroy(gameObject);
+                return;
+            }
+
+            Instance = this;
+            
+            cycle = GetComponent<GameCycle>();
+        }
     }
 }

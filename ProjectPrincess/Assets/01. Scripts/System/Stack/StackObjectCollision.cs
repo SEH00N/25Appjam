@@ -1,11 +1,13 @@
 using Collisions;
 using Players;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Stacks
 {
     public class StackObjectCollision : MonoBehaviour, ICollidable
     {
+        [SerializeField] UnityEvent onCollisionEvent = null;
         private StackObject stackObject = null;
 
         private void Awake()
@@ -19,6 +21,7 @@ namespace Stacks
                 return;
 
             stacker.AddStackObject(stackObject);
+            onCollisionEvent?.Invoke();
         }
     }
 }

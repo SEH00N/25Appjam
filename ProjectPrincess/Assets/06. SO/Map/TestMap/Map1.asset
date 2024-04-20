@@ -10,6 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: acee96dcde328004bba72ca4bc7f867f, type: 3}
-  m_Name: Castle
+  m_Name: Map1
   m_EditorClassIdentifier: 
-  obstacle: []
+  MapPrefab: {fileID: 9005888329705851215, guid: 86c9ee2ade2cb974a8ab9ef859979335,
+    type: 3}
+  MapSize: 10

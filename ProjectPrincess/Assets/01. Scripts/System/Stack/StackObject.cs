@@ -19,14 +19,20 @@ namespace Stacks
 
         public void SetChild(StackObject child)
         {
-            child.Init(childContainer.position);
+            child.SetPosition(childContainer.position);
             this.child = child;
         }
 
-        public void Init(Vector3 position)
+        public void SetPosition(Vector3 position)
         {
             transform.position = position;
             movement.SetActive(true);
+        }
+
+        public void PushPosition(Transform target)
+        {
+            transform.position = target.position;
+            child?.PushPosition(childContainer);
         }
     }
 }
