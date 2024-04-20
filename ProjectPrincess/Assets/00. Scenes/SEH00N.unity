@@ -341,6 +341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e0d1172d007ecb42a893a350ad75240, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentTheme: {fileID: 0}
   themes:
   - {fileID: 11400000, guid: 16ffd2f75574dad4bb554519f2d632eb, type: 2}
   mapSpawnPosition: {fileID: 791563612}
@@ -1158,7 +1159,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1728159741
 Transform:
   m_ObjectHideFlags: 0

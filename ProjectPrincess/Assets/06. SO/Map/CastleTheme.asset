@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd9f742f422362e4ba2f326265fc2f3e, type: 3}
+  m_Name: CastleTheme
+  m_EditorClassIdentifier: 
+  maps:
+  - {fileID: 11400000, guid: 42202aa8e91c23949996a4a77b4514d8, type: 2}
+  - {fileID: 11400000, guid: 0b10bf354791cb742aecc986a7702150, type: 2}
+  - {fileID: 11400000, guid: aa4c2af3a61460a4db725c12a7aa1357, type: 2}
+  - {fileID: 11400000, guid: fa2ffd19309f23148b58dfa8a32349c2, type: 2}
+  - {fileID: 11400000, guid: 1903a0a7d67a29b419aa31c710d0745b, type: 2}
+  - {fileID: 11400000, guid: ef4f89e7984b44f4fb987493103202ed, type: 2}
+  - {fileID: 11400000, guid: f4e4555e83cc0f949a08279d63ad0fac, type: 2}
+  - {fileID: 11400000, guid: 6c445811d84480347ad9420a77ff509d, type: 2}
+  - {fileID: 11400000, guid: b01a7b2215316914fb629681411afb17, type: 2}
+  - {fileID: 11400000, guid: f41db8e559f38a44aa1a669d5962ed60, type: 2}
