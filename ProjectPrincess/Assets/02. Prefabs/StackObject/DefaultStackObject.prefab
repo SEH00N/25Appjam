@@ -10,9 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5948105485918258433}
   - component: {fileID: 5831113260545812131}
-  - component: {fileID: 7386689952822628311}
-  - component: {fileID: 6174055118160398430}
-  - component: {fileID: 2991914062680539392}
   - component: {fileID: 7657219150235300025}
   - component: {fileID: 3159903519084433275}
   m_Layer: 0
@@ -54,79 +51,6 @@ MonoBehaviour:
   direction: {x: 3, y: 0, z: 0}
   body: {fileID: 5948105485918258433}
   active: 0
---- !u!114 &7386689952822628311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6565808724108366612}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6dce3e92c4ac2f949bef5df7a1ace7d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  childContainer: {fileID: 3652990571063554212}
-  onStackEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7657219150235300025}
-        m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
---- !u!114 &6174055118160398430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6565808724108366612}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f698652841dd4947b1a80c90bcc8964, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  castingLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  onCollisionEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7657219150235300025}
-        m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &2991914062680539392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6565808724108366612}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 604e12494486edd48aef2f4dccf94bd7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onPlayerDeadEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!65 &7657219150235300025
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -217,17 +141,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: b06975d1385454b4dadbab5ed5d5b8c9,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 25
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b06975d1385454b4dadbab5ed5d5b8c9,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 25
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b06975d1385454b4dadbab5ed5d5b8c9,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 25
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b06975d1385454b4dadbab5ed5d5b8c9,
         type: 3}
