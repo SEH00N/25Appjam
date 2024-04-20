@@ -175,8 +175,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 829b1f0b73e70494cb73290319ce8131, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0.1
+  scrollSpeed: 0.05
   player: {fileID: 0}
+  parent: {fileID: 4436684611941936076}
 --- !u!1 &7305473173019139492
 GameObject:
   m_ObjectHideFlags: 0
