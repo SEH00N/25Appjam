@@ -5,12 +5,16 @@ namespace Maps.Obstacles
 {
     public class Obstacle : MonoBehaviour
     {
-        public void OnCollide(GameObject other)
+        [SerializeField] LayerMask castingLayer = 1 << 7 | 1 << 8;
+
+        private void OnCollisionEnter(Collision other)
         {
-            if(other.TryGetComponent<IDamaeable>(out IDamaeable damageable))
-            {
-                damageable?.OnDamage(100, gameObject);
-            }
+            int otherLayer = 1 << other.gameObject.layer;
+            if((otherLayer & castingLayer) == 0)
+                return;
+
+            if(other.gameObject.TryGetComponent<IDamageable>(out IDamageable damageable))
+                damageable?.OnDamage(1f, gameObject);
         }
     }
 }

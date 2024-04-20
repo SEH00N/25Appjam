@@ -263,6 +263,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 471882228}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &33665875 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6881852174048940476, guid: 276fb0b26c0921c42a3dd35c46cdfac8,
+    type: 3}
+  m_PrefabInstance: {fileID: 2142718613}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &35919826
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6648,10 +6654,40 @@ PrefabInstance:
       propertyPath: playerPosition
       value: 
       objectReference: {fileID: 86999263}
-    - target: {fileID: 5375749967335333774, guid: 276fb0b26c0921c42a3dd35c46cdfac8,
+    - target: {fileID: 1265647619559443595, guid: 276fb0b26c0921c42a3dd35c46cdfac8,
         type: 3}
-      propertyPath: active
-      value: 0
+      propertyPath: onPlayerDeadEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1265647619559443595, guid: 276fb0b26c0921c42a3dd35c46cdfac8,
+        type: 3}
+      propertyPath: onPlayerDeadEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1265647619559443595, guid: 276fb0b26c0921c42a3dd35c46cdfac8,
+        type: 3}
+      propertyPath: onPlayerDeadEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 33665875}
+    - target: {fileID: 1265647619559443595, guid: 276fb0b26c0921c42a3dd35c46cdfac8,
+        type: 3}
+      propertyPath: onPlayerDeadEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1265647619559443595, guid: 276fb0b26c0921c42a3dd35c46cdfac8,
+        type: 3}
+      propertyPath: onPlayerDeadEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 1265647619559443595, guid: 276fb0b26c0921c42a3dd35c46cdfac8,
+        type: 3}
+      propertyPath: onPlayerDeadEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1265647619559443595, guid: 276fb0b26c0921c42a3dd35c46cdfac8,
+        type: 3}
+      propertyPath: onPlayerDeadEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6881852174048940476, guid: 276fb0b26c0921c42a3dd35c46cdfac8,
         type: 3}
@@ -6725,7 +6761,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 2142718613}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 33665875}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c0cb29bdb870fe4449b73a2e09a8034e, type: 3}
@@ -6737,7 +6773,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 2142718613}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 33665875}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28a95d1a0a93650439126cb0df3d6440, type: 3}

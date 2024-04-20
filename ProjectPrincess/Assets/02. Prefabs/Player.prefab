@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 5375749967335333774}
   - component: {fileID: 4347200880576906713}
   - component: {fileID: 2731656043454605}
+  - component: {fileID: 1265647619559443595}
   - component: {fileID: 2465111811874253875}
   - component: {fileID: 1946962752485462443}
   m_Layer: 7
@@ -112,7 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: {x: 3, y: 0, z: 0}
   body: {fileID: 8502883667158089173}
-  active: 1
+  active: 0
 --- !u!114 &4347200880576906713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,6 +141,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPosition: {fileID: 0}
+--- !u!114 &1265647619559443595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6881852174048940476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84b0b476e44383844bbb55308445edc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPlayerDeadEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!65 &2465111811874253875
 BoxCollider:
   m_ObjectHideFlags: 0
