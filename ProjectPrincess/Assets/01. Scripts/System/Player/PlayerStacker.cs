@@ -40,10 +40,22 @@ namespace Players
             transform.position += Vector3.up * offset;
         }
 
+        public void ResetStack()
+        {
+            while(stackObjects.Count > 0)
+            {
+                StackObject instance = stackObjects.Pop();
+                if(instance != null && instance.gameObject != null)
+                    Destroy(instance?.gameObject);
+            }
+            stackObjects.Clear();
+        }
+
         private Vector3 GetQueuePosition(int count)
         {
+            Debug.Log(count);
             Vector3 position = queuePosition.position;
-            position.y = queuePositionY;
+            // position.y = queuePositionY;
             position.x -= count * offset;
 
             return position;

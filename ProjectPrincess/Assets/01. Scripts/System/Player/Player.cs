@@ -23,6 +23,8 @@ namespace Players
 
             transform.position = playerPosition.position;
             gameObject.SetActive(true);
+
+            stacker.ResetStack();
         }
 
         public void AddStackObject(StackObject stackObject)

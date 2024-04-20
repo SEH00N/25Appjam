@@ -15,7 +15,9 @@ namespace Stacks
 
         public void OnDamage(float damage, GameObject performer)
         {
+            Debug.Log("asd");
             movement.SetActive(false);
+            Destroy(gameObject);
         }
     }
 }
