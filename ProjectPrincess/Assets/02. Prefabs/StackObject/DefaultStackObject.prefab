@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28a95d1a0a93650439126cb0df3d6440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: {x: 3, y: 0, z: 0}
+  direction: {x: 5, y: 0, z: 0}
   body: {fileID: 5948105485918258433}
   active: 0
 --- !u!114 &7386689952822628311

@@ -8021,7 +8021,7 @@ PrefabInstance:
     - target: {fileID: 5375749967335333774, guid: 276fb0b26c0921c42a3dd35c46cdfac8,
         type: 3}
       propertyPath: direction.x
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6881852174048940476, guid: 276fb0b26c0921c42a3dd35c46cdfac8,
         type: 3}
