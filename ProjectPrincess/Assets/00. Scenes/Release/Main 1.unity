@@ -293,8 +293,9 @@ MonoBehaviour:
 
     Card'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8ecd17aeceaba4c10b42ac497ccbfcff, type: 2}
+  m_sharedMaterial: {fileID: 2830636965969884548, guid: 8ecd17aeceaba4c10b42ac497ccbfcff,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1848,6 +1849,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41ce2286216dbda4ca51acdc9ea12cb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  data:
+    UnlockedSkinList: 
 --- !u!114 &903026039
 MonoBehaviour:
   m_ObjectHideFlags: 0
