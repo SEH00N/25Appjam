@@ -66,6 +66,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dce3e92c4ac2f949bef5df7a1ace7d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  smokeParticle: {fileID: 8952663156571130778, guid: 8c95b4bf967a290459cefe8b9083a017,
+    type: 3}
 --- !u!114 &6174055118160398430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,6 +83,8 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
+  heartParticle: {fileID: 7155592201433175293, guid: 35855ad2b208dcc40b1e4c49a8b39a90,
+    type: 3}
 --- !u!114 &1667655502453653186
 MonoBehaviour:
   m_ObjectHideFlags: 0

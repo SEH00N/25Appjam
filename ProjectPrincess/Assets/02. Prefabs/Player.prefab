@@ -153,6 +153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84b0b476e44383844bbb55308445edc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endAudio: {fileID: 8952663156571130778, guid: 549d06ce0df4292429746f714bce47ca,
+    type: 3}
   onPlayerDeadEvent:
     m_PersistentCalls:
       m_Calls: []
