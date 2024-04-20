@@ -101,7 +101,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -119,6 +119,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1070b2f5224b6648bc07b1cc349bb09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  castingLayer:
+    serializedVersion: 2
+    m_Bits: 384
 --- !u!1 &1609879632975515337
 GameObject:
   m_ObjectHideFlags: 0
@@ -167,7 +170,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -185,6 +188,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1070b2f5224b6648bc07b1cc349bb09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  castingLayer:
+    serializedVersion: 2
+    m_Bits: 384
 --- !u!1 &1699652497795518022
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,7 +292,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -304,6 +310,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1070b2f5224b6648bc07b1cc349bb09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  castingLayer:
+    serializedVersion: 2
+    m_Bits: 384
 --- !u!1 &6193549664796703276
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,7 +414,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -423,6 +432,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1070b2f5224b6648bc07b1cc349bb09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  castingLayer:
+    serializedVersion: 2
+    m_Bits: 384
 --- !u!1 &6420527682062833898
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,7 +536,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -542,6 +554,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1070b2f5224b6648bc07b1cc349bb09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  castingLayer:
+    serializedVersion: 2
+    m_Bits: 384
 --- !u!1 &6950371795608110241
 GameObject:
   m_ObjectHideFlags: 0
@@ -674,7 +689,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -692,6 +707,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1070b2f5224b6648bc07b1cc349bb09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  castingLayer:
+    serializedVersion: 2
+    m_Bits: 384
 --- !u!1 &8247501184500004747
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,7 +758,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -758,6 +776,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1070b2f5224b6648bc07b1cc349bb09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  castingLayer:
+    serializedVersion: 2
+    m_Bits: 384
 --- !u!1 &8283225734027104295
 GameObject:
   m_ObjectHideFlags: 0
@@ -806,7 +827,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -824,6 +845,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1070b2f5224b6648bc07b1cc349bb09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  castingLayer:
+    serializedVersion: 2
+    m_Bits: 384
 --- !u!1 &9066415468659334570
 GameObject:
   m_ObjectHideFlags: 0
@@ -872,7 +896,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -890,6 +914,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1070b2f5224b6648bc07b1cc349bb09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  castingLayer:
+    serializedVersion: 2
+    m_Bits: 384
 --- !u!1001 &243443506104986882
 PrefabInstance:
   m_ObjectHideFlags: 0

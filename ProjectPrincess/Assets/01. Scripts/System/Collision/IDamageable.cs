@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Collisions
 {
-    public interface IDamaeable
+    public interface IDamageable
     {
         public void OnDamage(float damage, GameObject performer);
     }
