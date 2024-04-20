@@ -7,6 +7,7 @@ namespace Core
     {
         [SerializeField] UnityEvent onGameStartedEvent = null;
         [SerializeField] UnityEvent onGameFinishedEvent = null;
+        [SerializeField] UnityEvent onGameResetEvent = null;
 
         public void StartGame()
         {
@@ -16,6 +17,11 @@ namespace Core
         public void FinishGame()
         {
             onGameFinishedEvent?.Invoke();
+        }
+
+        public void ResetGame()
+        {
+            onGameResetEvent?.Invoke();
         }
     }
 }
