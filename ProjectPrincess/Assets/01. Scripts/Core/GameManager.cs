@@ -9,6 +9,8 @@ namespace Core
         private GameCycle cycle = null;
         public GameCycle Cycle => cycle;
 
+        public PlayerData data = null;
+
         private void Awake()
         {
             if(Instance != null)
@@ -20,6 +22,13 @@ namespace Core
             Instance = this;
             
             cycle = GetComponent<GameCycle>();
+            DataManager.LoadData();
+            data = DataManager.PlayerData;
+        }
+
+        private void OnDestroy()
+        {
+            DataManager.SaveData();
         }
     }
 }
