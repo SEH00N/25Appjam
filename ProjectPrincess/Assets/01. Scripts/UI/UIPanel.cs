@@ -10,12 +10,12 @@ namespace UI
         [SerializeField] OptOption<UnityEvent> onDisplayEvent = null;
         [SerializeField] TweenOptOption tweenOption = null;
 
-        private void Awake()
+        protected virtual void Awake()
         {
             tweenOption.Init(transform);
         }
 
-        public void Display(bool active)
+        public virtual void Display(bool active)
         {
             onDisplayEvent.GetOption(active)?.Invoke();
             tweenOption.GetOption(active)?.PlayTween();

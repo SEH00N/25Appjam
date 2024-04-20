@@ -60,5 +60,20 @@ namespace Core
                 Debug.Log($"error with saving data : {err.Message}");
             }
         }
+
+        public static void ClearData()
+        {
+            if (File.Exists(fullPath))
+            {
+                try
+                {
+                    File.Delete(fullPath);
+                }
+                catch (Exception err)
+                {
+                    Debug.Log($"errror with deleting data file : {err.Message}");
+                }
+            }
+        }
     }
 }
