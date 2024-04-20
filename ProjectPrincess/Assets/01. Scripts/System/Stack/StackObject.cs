@@ -6,6 +6,8 @@ namespace Stacks
 {
     public class StackObject : MonoBehaviour
     {
+        [SerializeField] GameObject smokeParticle;
+
         private BasicMovement movement = null;
 
         private StackObjectState state;
@@ -23,6 +25,9 @@ namespace Stacks
             state = newState;
             OnStateChangedEvent?.Invoke(state);
             HandleStateChanged(state);
+
+            Instantiate(smokeParticle, transform.position, Quaternion.identity);
+
         }
 
         private void HandleStateChanged(StackObjectState state)
