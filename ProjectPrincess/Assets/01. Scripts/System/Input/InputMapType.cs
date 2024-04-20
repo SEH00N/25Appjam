@@ -2,7 +2,7 @@ namespace Input
 {
     public enum InputMapType
     {
-        Play,
-        UI
+        Ingame,
+        //UI
     }
 }

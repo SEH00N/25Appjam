@@ -41,10 +41,21 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""0b706087-28ea-4111-8d2f-fcce2e52ab56"",
-                    ""path"": ""<Touchscreen>/Press"",
+                    ""path"": ""<Mouse>/leftButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
+                    ""action"": ""Stack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""044b178e-ac44-4697-b037-f95edf557b3a"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Window"",
                     ""action"": ""Stack"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -59,6 +70,22 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             ""devices"": [
                 {
                     ""devicePath"": ""<Touchscreen>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""Window"",
+            ""bindingGroup"": ""Window"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<Mouse>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                },
+                {
+                    ""devicePath"": ""<Keyboard>"",
                     ""isOptional"": false,
                     ""isOR"": false
                 }
@@ -179,6 +206,15 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         {
             if (m_AndroidSchemeIndex == -1) m_AndroidSchemeIndex = asset.FindControlSchemeIndex("Android");
             return asset.controlSchemes[m_AndroidSchemeIndex];
+        }
+    }
+    private int m_WindowSchemeIndex = -1;
+    public InputControlScheme WindowScheme
+    {
+        get
+        {
+            if (m_WindowSchemeIndex == -1) m_WindowSchemeIndex = asset.FindControlSchemeIndex("Window");
+            return asset.controlSchemes[m_WindowSchemeIndex];
         }
     }
     public interface IIngameActions
