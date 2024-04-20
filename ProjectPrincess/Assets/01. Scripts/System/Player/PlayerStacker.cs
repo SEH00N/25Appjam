@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Core;
 using Stacks;
 using UnityEngine;
 
@@ -23,6 +24,9 @@ namespace Players
 
         public void AddStackObject(StackObject stackObject)
         {
+            GameManager.Instance.CurrentScore += 1;
+            GameManager.Instance.EarnedCoin += 10;
+
             stackObjects.Push(stackObject);
 
             stackObject.ChangeState(StackObjectState.Queue);

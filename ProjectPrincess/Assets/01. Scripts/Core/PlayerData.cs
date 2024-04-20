@@ -7,6 +7,7 @@ namespace Core
     {
         public List<int> UnlockedSkinList = null;
         public int BestScore = 0;
+        public int Coin = 0;
 
         public void CreateData()
         {

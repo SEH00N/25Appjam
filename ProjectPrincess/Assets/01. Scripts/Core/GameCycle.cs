@@ -23,6 +23,8 @@ namespace Core
         public void ResetGame()
         {
             onGameResetEvent?.Invoke();
+            GameManager.Instance.EarnedCoin = 0;
+            GameManager.Instance.CurrentScore = 0;
         }
     }
 }

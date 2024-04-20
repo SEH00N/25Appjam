@@ -3286,6 +3286,7 @@ MonoBehaviour:
   data:
     UnlockedSkinList: 
     BestScore: 0
+    Coin: 0
   CurrentScore: 0
   EarnedCoin: 0
 --- !u!114 &903026039
@@ -3357,6 +3358,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1934987984}
         m_TargetAssemblyTypeName: Maps.MapLoader, Assembly-CSharp
         m_MethodName: StopCycle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 509950302}
+        m_TargetAssemblyTypeName: UI.Ingame.ResultPanel, Assembly-CSharp
+        m_MethodName: Init
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3816,6 +3829,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1048693751}
+  - component: {fileID: 1048693753}
   - component: {fileID: 1048693752}
   m_Layer: 5
   m_Name: TopPanel
@@ -3861,13 +3875,39 @@ MonoBehaviour:
   onDisplayEvent:
     PositiveOption:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1048693753}
+          m_TargetAssemblyTypeName: UI.TopPanel, Assembly-CSharp
+          m_MethodName: Init
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     NegativeOption:
       m_PersistentCalls:
         m_Calls: []
   tweenOption:
     PositiveOption: {fileID: 11400000, guid: 9c9df0d475eb8ff4ea959ffca1b7a0dd, type: 2}
     NegativeOption: {fileID: 11400000, guid: 0e040c58e95f248468e63509394c2040, type: 2}
+--- !u!114 &1048693753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048693750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0425fc1b00c449d43b58d84d317fe392, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinUI: {fileID: 1227367291}
+  scoreUI: {fileID: 546794035}
 --- !u!1 &1056327162 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 182a275405cb8d7419cc6cb171e9b1ac,

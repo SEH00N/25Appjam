@@ -18,9 +18,14 @@ namespace UI.Ingame
 
         public void Init()
         {
+            if(GameManager.Instance.CurrentScore > DataManager.PlayerData.BestScore)
+                DataManager.PlayerData.BestScore = GameManager.Instance.CurrentScore;
+
             bestScoreText.text = $"BEST : {DataManager.PlayerData.BestScore}";
             currentScoreText.text = $"{GameManager.Instance.CurrentScore}";
             coinText.text = $"{GameManager.Instance.EarnedCoin}";
+
+            DataManager.PlayerData.Coin += GameManager.Instance.EarnedCoin;
         }
     }
 }
