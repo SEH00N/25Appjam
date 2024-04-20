@@ -3,15 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Players;
+using UnityEngine.Events;
 
-public class SkinPanel : MonoBehaviour
+namespace UI
 {
-    [SerializeField] Sprite[] skinImages;
-    [SerializeField] Image selectSkinImage;
-
-    public void SelectSkin(int index)
+    public class SkinPanel : UIPanel
     {
-        selectSkinImage.sprite = skinImages[index];
-        //UpdateSkin
+        [SerializeField] Sprite[] skinImages;
+        [SerializeField] Image selectSkinImage;
+
+        [SerializeField] PlayerSkin skin = null;
+
+        public void SelectSkin(int index)
+        {
+            selectSkinImage.sprite = skinImages[index];
+            skin.UpdateSkin(index);
+            //UpdateSkin
+        }
     }
 }

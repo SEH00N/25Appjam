@@ -23,6 +23,7 @@ namespace Players
 
         public void UpdateSkin(int index)
         {
+            Debug.Log(index);
             ClearVisual();
 
             GameObject skinInstance = Instantiate(skinList[index].Visual, visualContainer);
