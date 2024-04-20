@@ -16,8 +16,10 @@ namespace UI.Shop
         private List<int> gachaList = null;
         private PlayerData playerData = null;
 
-        private void Awake()
+        protected override void Awake()
         {
+            base.Awake();
+
             resultPanel = transform.parent.Find("GachaResultPanel").GetComponent<GachaResultPanel>();
         }
 
