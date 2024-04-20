@@ -21,6 +21,8 @@ public class ChangeSky : MonoBehaviour
     {
         renderer = GetComponent<Renderer>();
         movingSky = GetComponent<MovingSky>();
+
+        StartCoroutine(SkyChange());    
     }
 
     private void Update()
