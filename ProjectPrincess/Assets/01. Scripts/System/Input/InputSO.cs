@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Input
+namespace Inputs
 {
     public class InputSO : ScriptableObject
     {

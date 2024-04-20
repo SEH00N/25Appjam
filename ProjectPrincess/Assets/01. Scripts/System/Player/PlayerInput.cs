@@ -1,12 +1,15 @@
-using System;
 using Inputs;
 using UnityEngine;
+using UnityEngine.Events;
 
-namespace Test
+namespace Players
 {
-    public class TInput : MonoBehaviour
+    public class PlayerInput : MonoBehaviour
     {
         [SerializeField] IngameInputSO input = null;
+
+        [Space(15f)]
+        [SerializeField] UnityEvent onStackingEvent = null;
 
         private void Awake()
         {
@@ -15,9 +18,14 @@ namespace Test
             input.OnStackEvent += HandleStack;
         }
 
+        private void OnDestroy()
+        {
+            input.OnStackEvent -= HandleStack;
+        }
+
         private void HandleStack()
         {
-            Debug.Log("Stack");
+            onStackingEvent?.Invoke();
         }
     }
 }
