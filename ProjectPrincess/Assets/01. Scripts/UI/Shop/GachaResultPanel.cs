@@ -9,6 +9,7 @@ namespace UI.Shop
 
         public void DisplayResult(int unlockedSkinIndex)
         {
+            gameObject.SetActive(true);
             Display(true);
 
             SkinSO skinData = skinList[unlockedSkinIndex];
