@@ -1857,7 +1857,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c163de2fcce0fea41827ece92dbeaa24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultPosition: {fileID: 1679795229}
 --- !u!114 &540559834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1870,8 +1869,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc9266c0dcd2d5c4f8aeea40286e53c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stackPosition: {fileID: 359259511}
-  offset: 1.25
 --- !u!114 &540559835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1884,9 +1881,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f2fd8bacfc0b234b8acd143dc3b7ea6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  castingLayer:
-    serializedVersion: 2
-    m_Bits: 65
 --- !u!114 &540559836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4978,7 +4972,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -5072,12 +5066,12 @@ MonoBehaviour:
   m_RequiresColorTexture: 0
   m_Version: 2
   m_TaaSettings:
-    quality: 3
-    frameInfluence: 0.1
-    jitterScale: 1
-    mipBias: 0
-    varianceClampScale: 0.9
-    contrastAdaptiveSharpening: 0
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!114 &1472172594
 MonoBehaviour:
   m_ObjectHideFlags: 0
