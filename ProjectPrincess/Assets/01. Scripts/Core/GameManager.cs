@@ -11,6 +11,9 @@ namespace Core
 
         public PlayerData data = null;
 
+        public int CurrentScore = 0;
+        public int EarnedCoin = 0;
+
         private void Awake()
         {
             if(Instance != null)
