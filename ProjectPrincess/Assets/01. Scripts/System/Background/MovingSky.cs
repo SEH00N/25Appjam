@@ -14,8 +14,7 @@ public class MovingSky : MonoBehaviour
 
     private void Start()
     {
-        renderer = GetComponent<Renderer>();
-        material = renderer.material;
+        GetRenderer();
     }
 
     private void Update()
@@ -27,5 +26,11 @@ public class MovingSky : MonoBehaviour
         float offsetX = Time.time * scrollSpeed;
         Vector2 offset = new Vector2(offsetX, 0);
         material.mainTextureOffset = offset;
+    }
+
+    public void GetRenderer()
+    {
+        renderer = GetComponent<Renderer>();
+        material = renderer.material;
     }
 }
