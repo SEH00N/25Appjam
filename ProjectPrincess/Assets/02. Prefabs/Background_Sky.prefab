@@ -42,7 +42,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4436684611941936076}
-  - component: {fileID: 3264917128925453877}
   m_Layer: 0
   m_Name: Background_Sky
   m_TagString: Untagged
@@ -66,20 +65,6 @@ Transform:
   - {fileID: 7806932527952212300}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3264917128925453877
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4747352166729173851}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 829b1f0b73e70494cb73290319ce8131, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerTransform: {fileID: 0}
-  parallaxEffect: 0.5
 --- !u!1 &4980072342638811522
 GameObject:
   m_ObjectHideFlags: 0
@@ -93,6 +78,7 @@ GameObject:
   - component: {fileID: 2014436410426926019}
   - component: {fileID: 2130283754391266324}
   - component: {fileID: 987968397501055051}
+  - component: {fileID: 7931304091639826141}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -207,6 +193,19 @@ MonoBehaviour:
   - {fileID: 2100000, guid: d67c193ce3c2ba14aad685fc926a508c, type: 2}
   - {fileID: 2100000, guid: 59d07428061b4b8439b41cc6a96dba37, type: 2}
   cloudObject: {fileID: 7305473173019139492}
+--- !u!114 &7931304091639826141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4980072342638811522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 829b1f0b73e70494cb73290319ce8131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollSpeed: 0.1
 --- !u!1 &7305473173019139492
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,13 +215,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4839247254027845188}
+  - component: {fileID: 5721034406870656666}
   m_Layer: 0
   m_Name: Cloud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4839247254027845188
 Transform:
   m_ObjectHideFlags: 0
@@ -243,6 +243,19 @@ Transform:
   - {fileID: 8517832173258560001}
   m_Father: {fileID: 7806932527952212300}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5721034406870656666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7305473173019139492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f4497da90e58404185aa4d2030c8992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 2
 --- !u!1001 &5647679419061004035
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -356,7 +369,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2df72ec125264584faa40cb1beef0481, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.92
+      value: -6.77
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2df72ec125264584faa40cb1beef0481, type: 3}
       propertyPath: m_LocalPosition.y
@@ -439,7 +452,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 09062dc0008857b46aaacdb7206f1453, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.07
+      value: 9.7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 09062dc0008857b46aaacdb7206f1453, type: 3}
       propertyPath: m_LocalPosition.y
@@ -522,7 +535,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2df72ec125264584faa40cb1beef0481, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.28
+      value: -11.39
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2df72ec125264584faa40cb1beef0481, type: 3}
       propertyPath: m_LocalPosition.y

@@ -4,25 +4,20 @@ using UnityEngine;
 
 public class MovingSky : MonoBehaviour
 {
-    [SerializeField] private Transform playerTransform;
-    [SerializeField] private float parallaxEffect = 0.5f; 
+    [SerializeField] private float scrollSpeed = 0.1f; 
+    private Renderer renderer;
+    private Material material;
 
-    private float startPosX;
-    private float length = 19f;
-
-    void Start()
+    private void Start()
     {
-        startPosX = transform.position.x; 
+        renderer = GetComponent<Renderer>();
+        material = renderer.material;
     }
 
-    void Update()
+    private void Update()
     {
-        float distanceX = (playerTransform.position.x - startPosX) * parallaxEffect; 
-        transform.position = new Vector3(startPosX + distanceX, transform.position.y, transform.position.z);
-
-        if (playerTransform.position.x > startPosX + length)
-            startPosX += length;
-        else if (playerTransform.position.x < startPosX - length)
-            startPosX -= length;
+        float offsetX = Time.time * scrollSpeed;
+        Vector2 offset = new Vector2(offsetX, 0);
+        material.mainTextureOffset = offset;
     }
 }
