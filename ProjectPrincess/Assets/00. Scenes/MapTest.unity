@@ -875,6 +875,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1943393637 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4436684611941936076, guid: 3b9d61989bf123842a34dde008d584df,
+    type: 3}
+  m_PrefabInstance: {fileID: 5380348871181570131}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5380348871181570131
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -937,6 +943,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Background_Sky
+      objectReference: {fileID: 0}
+    - target: {fileID: 7931304091639826141, guid: 3b9d61989bf123842a34dde008d584df,
+        type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 1943393637}
+    - target: {fileID: 7931304091639826141, guid: 3b9d61989bf123842a34dde008d584df,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1306359657}
+    - target: {fileID: 7931304091639826141, guid: 3b9d61989bf123842a34dde008d584df,
+        type: 3}
+      propertyPath: scrollSpeed
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

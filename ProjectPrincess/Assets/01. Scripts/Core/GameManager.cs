@@ -22,6 +22,8 @@ namespace Core
             Instance = this;
             
             cycle = GetComponent<GameCycle>();
+            
+            DataManager.ClearData();
             DataManager.LoadData();
             data = DataManager.PlayerData;
         }

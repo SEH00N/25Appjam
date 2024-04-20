@@ -6,7 +6,11 @@ using DG.Tweening;
 public class ChangeSky : MonoBehaviour
 {
     [SerializeField] private int matNum = 1;
+    [SerializeField] private float fadeSpeed = 0.5f;
+    [SerializeField] private float changeSpeed = 10f;
     
+    private float currentSpeed = 10f;
+
     [SerializeField] private Material[] skyMat;
     [SerializeField] private GameObject cloudObject;
 
@@ -19,26 +23,34 @@ public class ChangeSky : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (currentSpeed > 0)
         {
-            StartCoroutine(SkyChange());
+            currentSpeed -= Time.deltaTime;
+            if (currentSpeed <= 0)
+            {
+                StartCoroutine(SkyChange());
+                currentSpeed = changeSpeed;
+            }
         }
     }
 
     public IEnumerator SkyChange()
     {
-        renderer.material.DOColor(Color.black, 0.5f);
+        renderer.material.DOColor(Color.black, fadeSpeed);
         cloudObject.SetActive(false);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(fadeSpeed);
 
         renderer.material = skyMat[matNum];
 
-        renderer.material.DOColor(Color.white, 0.5f);   
-        yield return new WaitForSeconds(0.4f);
+        renderer.material.DOColor(Color.white, fadeSpeed);
+        yield return new WaitForSeconds(fadeSpeed - 1f);
         cloudObject.SetActive(true);
 
         matNum++;
         if (matNum == skyMat.Length)
             matNum = 0;
+
+        // changeSpeed ÃÊ±âÈ­
+        changeSpeed = 10f;
     }
 }
