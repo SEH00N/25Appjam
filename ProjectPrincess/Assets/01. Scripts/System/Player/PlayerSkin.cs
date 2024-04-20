@@ -1,14 +1,42 @@
-using player;
-using System.Collections;
-using System.Collections.Generic;
+using Skins;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class PlayerSkin : MonoBehaviour
+namespace Players
 {
-    [SerializeField] SkinSO[] skins;
-
-    public Mesh SkinUpdate(int index)
+    public class PlayerSkin : MonoBehaviour
     {
-        return skins[index].mesh;
+        [SerializeField] SkinListSO skinList = null;
+        [SerializeField] UnityEvent onSkinChangedEvent = null;
+
+        private Transform visualContainer = null;
+
+        private void Awake()
+        {
+            visualContainer = transform.Find("Visual");
+        }
+
+        private void Start()
+        {
+            UpdateSkin(0);
+        }
+
+        public void UpdateSkin(int index)
+        {
+            ClearVisual();
+
+            GameObject skinInstance = Instantiate(skinList[index].Visual, visualContainer);
+            skinInstance.transform.localPosition = Vector3.zero;
+            skinInstance.transform.localRotation = Quaternion.identity;
+
+            onSkinChangedEvent?.Invoke();
+        }
+
+        private void ClearVisual()
+        {
+            GameObject visual = visualContainer.GetChild(0)?.gameObject;
+            if(visual != null)
+                Destroy(visual);
+        }
     }
 }
