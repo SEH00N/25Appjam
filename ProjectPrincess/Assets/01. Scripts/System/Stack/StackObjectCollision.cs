@@ -7,8 +7,14 @@ namespace Stacks
 {
     public class StackObjectCollision : MonoBehaviour, ICollidable
     {
+<<<<<<< Updated upstream
         [SerializeField] LayerMask castingLayer = 0;
         [SerializeField] UnityEvent onCollisionEvent = null;
+=======
+        [SerializeField] GameObject heartParticle;
+
+        [SerializeField] LayerMask playerLayer = 0;
+>>>>>>> Stashed changes
         private StackObject stackObject = null;
 
         private void OnTriggerEnter(Collider other)
@@ -33,8 +39,25 @@ namespace Stacks
             if(other.TryGetComponent<PlayerStacker>(out PlayerStacker stacker) == false)
                 return;
 
+<<<<<<< Updated upstream
             stacker.AddStackObject(stackObject);
             onCollisionEvent?.Invoke();
+=======
+            if(other.TryGetComponent<Player>(out Player player))
+            {
+                Instantiate(heartParticle, transform.position, Quaternion.identity);
+                player.AddStackObject(stackObject);
+            }
+        }
+
+        public void HandleStackObjectChanged(StackObjectState state)
+        {
+            if(state == StackObjectState.Queue)
+            {
+                col.isTrigger = false;
+                rb.useGravity = true;
+            }
+>>>>>>> Stashed changes
         }
     }
 }

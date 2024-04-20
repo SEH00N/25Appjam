@@ -6,8 +6,12 @@ namespace Stacks
 {
     public class StackObject : MonoBehaviour
     {
+<<<<<<< Updated upstream
         [SerializeField] Transform childContainer = null;
         [SerializeField] UnityEvent onStackEvent = null;
+=======
+        [SerializeField] GameObject smokeParticle;
+>>>>>>> Stashed changes
 
         private BasicMovement movement = null;
 
@@ -21,10 +25,17 @@ namespace Stacks
 
         public void SetChild(StackObject child, float yOffset)
         {
+<<<<<<< Updated upstream
             Vector3 position = childContainer.position;
             position.y = yOffset;
             child.SetPosition(position);
             this.child = child;
+=======
+            state = newState;
+            OnStateChangedEvent?.Invoke(state);
+            HandleStateChanged(state);
+            Instantiate(smokeParticle, transform.position, Quaternion.identity);
+>>>>>>> Stashed changes
         }
 
         public void SetPosition(Vector3 position)
