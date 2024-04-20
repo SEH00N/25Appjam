@@ -25,6 +25,9 @@ namespace Players
 
         private void HandleStack()
         {
+            if(gameObject.activeInHierarchy == false)
+                return;
+
             onStackingEvent?.Invoke();
         }
     }

@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 namespace Players
 {
-    public class PlayerHealth : MonoBehaviour, IDamaeable
+    public class PlayerHealth : MonoBehaviour, IDamageable
     {
         [SerializeField] UnityEvent onPlayerDeadEvent = null;
 
