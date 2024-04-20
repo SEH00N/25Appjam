@@ -1,12 +1,11 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "SO/Map")]
-public class MapSO : ScriptableObject
+namespace Maps
 {
-    [SerializeField] GameObject[] obstacle;
-
-    public GameObject GetObstacle(int index)
+    [CreateAssetMenu(menuName = "SO/Map/MapData")]
+    public class MapSO : ScriptableObject
     {
-        return obstacle[index];
+        public Map MapPrefab = null;
+        public float MapSize = 3f;   
     }
 }
