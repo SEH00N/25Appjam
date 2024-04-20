@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Qween
+  m_text: 'Queen
 
     Card'
   m_isRightToLeft: 0
@@ -1436,9 +1436,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1573188664}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
+      - m_Target: {fileID: 1573188666}
+        m_TargetAssemblyTypeName: UI.UIPanel, Assembly-CSharp
+        m_MethodName: Display
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1586,6 +1586,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1048693751}
+  - component: {fileID: 1048693752}
   m_Layer: 5
   m_Name: TopPanel
   m_TagString: Untagged
@@ -1615,6 +1616,28 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -50}
   m_SizeDelta: {x: 700, y: 100}
   m_Pivot: {x: 0, y: 1}
+--- !u!114 &1048693752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048693750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7867f9755bee96d4dbcc60f358da42ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onDisplayEvent:
+    PositiveOption:
+      m_PersistentCalls:
+        m_Calls: []
+    NegativeOption:
+      m_PersistentCalls:
+        m_Calls: []
+  tweenOption:
+    PositiveOption: {fileID: 11400000, guid: 9c9df0d475eb8ff4ea959ffca1b7a0dd, type: 2}
+    NegativeOption: {fileID: 11400000, guid: 0e040c58e95f248468e63509394c2040, type: 2}
 --- !u!224 &1183944349 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 567201080458218452, guid: c1fbcc7ce48521d4899a11abd697c852,
@@ -2279,6 +2302,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1573188665}
+  - component: {fileID: 1573188666}
   m_Layer: 5
   m_Name: IntroPanel
   m_TagString: Untagged
@@ -2310,6 +2334,52 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1573188666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573188664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7867f9755bee96d4dbcc60f358da42ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onDisplayEvent:
+    PositiveOption:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1048693752}
+          m_TargetAssemblyTypeName: UI.UIPanel, Assembly-CSharp
+          m_MethodName: Display
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+    NegativeOption:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1048693752}
+          m_TargetAssemblyTypeName: UI.UIPanel, Assembly-CSharp
+          m_MethodName: Display
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  tweenOption:
+    PositiveOption: {fileID: 0}
+    NegativeOption: {fileID: 0}
 --- !u!1001 &1660723089
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3047,8 +3117,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -75, y: 0}
+  m_SizeDelta: {x: 150, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2101213401
 MonoBehaviour:

@@ -1,7 +1,7 @@
 using DG.Tweening;
 using UnityEngine;
 
-namespace OMG.Tweens
+namespace Tweens
 {
     [CreateAssetMenu(menuName = "SO/Tween/ShakeTween")]
     public class ShakeTweenSO : TweenSO

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 
-namespace OMG.Tweens
+namespace Tweens
 {
     public abstract class TweenSO : ScriptableObject
     {

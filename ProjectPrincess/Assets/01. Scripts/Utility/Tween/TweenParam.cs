@@ -1,6 +1,6 @@
 using DG.Tweening;
 
-namespace OMG.Tweens
+namespace Tweens
 {
     [System.Serializable]
     public struct TweenParam

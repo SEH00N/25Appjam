@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace OMG.Tweens
+namespace Tweens
 {
     public class TweenPlayer : MonoBehaviour
     {

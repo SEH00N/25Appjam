@@ -3,21 +3,21 @@ using UnityEngine;
 
 namespace Tweens
 {
-    [CreateAssetMenu(menuName = "SO/Tween/ScaleTween")]
-    public class ScaleTweenSO : TweenSO
+    [CreateAssetMenu(menuName = "SO/Tween/SlideHorizontalTween")]
+    public class SlideHorizontalTweenSO : TweenSO
     {
         [Space(15f)]
-        [SerializeField] float endValue = 1f;
+        [SerializeField] float endValue = 0f;
 
         protected override void OnTween(Sequence sequence)
         {
             TweenParam param;
             Tween tween;
 
-            for(int i = 0; i < tweenParams.Count; ++i)
+            for (int i = 0; i < tweenParams.Count; ++i)
             {
                 param = GetParam(i);
-                tween = body.DOScale(param.Value, param.Duration).SetDelay(param.Delay).SetEase(param.Ease);
+                tween = body.DOLocalMoveX(param.Value, param.Duration).SetDelay(param.Delay).SetEase(param.Ease);
                 sequence.Append(tween);
             }
         }
@@ -25,7 +25,7 @@ namespace Tweens
         protected override void HandleTweenCompleted()
         {
             base.HandleTweenCompleted();
-            body.localScale = new Vector3(endValue, endValue, 1f);
+            body.localPosition = new Vector3(body.localPosition.x, endValue, body.localPosition.z);
         }
     }
 }

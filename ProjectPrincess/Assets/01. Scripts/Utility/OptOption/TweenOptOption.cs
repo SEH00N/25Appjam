@@ -1,7 +1,7 @@
-using OMG.Utility;
+using Utility;
 using UnityEngine;
 
-namespace OMG.Tweens
+namespace Tweens
 {
     [System.Serializable]
     public class TweenOptOption : OptOption<TweenSO>

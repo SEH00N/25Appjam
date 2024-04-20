@@ -3,7 +3,7 @@ using DG.Tweening;
 using Extensions;
 using UnityEngine;
 
-namespace OMG.Tweens
+namespace Tweens
 {
     [CreateAssetMenu(menuName = "SO/Tween/Sequence")]
     public class TweenSequenceSO : TweenSO

@@ -1,4 +1,4 @@
-namespace OMG.Utility
+namespace Utility
 {
     [System.Serializable]
     public class OptOption<T>
