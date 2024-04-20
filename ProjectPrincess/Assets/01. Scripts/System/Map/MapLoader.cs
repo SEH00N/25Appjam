@@ -6,6 +6,7 @@ namespace Maps
 {
     public class MapLoader : MonoBehaviour
     {
+        [SerializeField] ThemeSO currentTheme = null;
         [SerializeField] List<ThemeSO> themes = null;
 
         [Space(15f)]
@@ -14,16 +15,9 @@ namespace Maps
         [SerializeField] float speedFactor = 1f;
 
         private int rerollCounter = 0;
-        private ThemeSO currentTheme = null;
-
-        private void Awake()
-        {
-            StartCycle();
-        }
 
         public void StartCycle()
         {
-            RerollTheme();
             Cycle();
         }
 
