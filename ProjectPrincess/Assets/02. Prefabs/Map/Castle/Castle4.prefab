@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 1882629385823431358}
   - component: {fileID: 3420732283398535491}
   - component: {fileID: 6240988720194572315}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Obstacle (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -195,7 +195,7 @@ GameObject:
   - component: {fileID: 179231640882604531}
   - component: {fileID: 797963376386955342}
   - component: {fileID: 7879529461291631845}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Obstacle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

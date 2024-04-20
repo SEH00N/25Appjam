@@ -80,7 +80,7 @@ GameObject:
   - component: {fileID: 6227946751178595202}
   - component: {fileID: 8262102603631009429}
   - component: {fileID: 391141243023202183}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Obstacle (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +146,7 @@ GameObject:
   - component: {fileID: 6837487209787570414}
   - component: {fileID: 7845759842051980970}
   - component: {fileID: 4159939697952436620}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Obstacle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -266,7 +266,7 @@ GameObject:
   - component: {fileID: 6200749057759760202}
   - component: {fileID: 8806198952014455269}
   - component: {fileID: 1868685039459375820}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DangerZone (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -282,7 +282,7 @@ Transform:
   m_GameObject: {fileID: 6558187586849042521}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.0919998, y: 0.587, z: 0}
+  m_LocalPosition: {x: -2.0919998, y: 0.66, z: 0}
   m_LocalScale: {x: 2, y: 0.2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -371,7 +371,7 @@ GameObject:
   - component: {fileID: 8049618179002092058}
   - component: {fileID: 1892302921934258308}
   - component: {fileID: 958775712850278471}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DangerZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -387,7 +387,7 @@ Transform:
   m_GameObject: {fileID: 8437645237969572403}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.3910003, y: 0.587, z: 0}
+  m_LocalPosition: {x: 2.3910003, y: 0.66, z: 0}
   m_LocalScale: {x: 2, y: 0.2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []

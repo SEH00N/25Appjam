@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4848770851828817772}
   - component: {fileID: 1225819291503143294}
   - component: {fileID: 3845467118528008960}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Obstacle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77,7 +77,7 @@ GameObject:
   - component: {fileID: 5750397917407266842}
   - component: {fileID: 6927657938537965406}
   - component: {fileID: 8373766024096900433}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Obstacle (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1487,6 +1487,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tnt
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2371679181555c24ba5a33540b1c5396,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

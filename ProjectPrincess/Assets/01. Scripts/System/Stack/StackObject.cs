@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using Utility;
 
 namespace Stacks
@@ -6,6 +7,7 @@ namespace Stacks
     public class StackObject : MonoBehaviour
     {
         [SerializeField] Transform childContainer = null;
+        [SerializeField] UnityEvent onStackEvent = null;
 
         private BasicMovement movement = null;
 
@@ -38,6 +40,12 @@ namespace Stacks
             transform.position = position;
 
             child?.PushPosition(childContainer, yOffset);
+        }
+
+        public void Stack(Vector3 position)
+        {
+            SetPosition(position);
+            onStackEvent?.Invoke();
         }
     }
 }
